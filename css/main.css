@@ -2545,6 +2545,10 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width:1200px) {
+  .row.text-center.button-group{
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
   .services-list {
     max-width: 900px;
   }
@@ -2556,6 +2560,10 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width:800px) {
+  .button-group{
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
   .s-services {
     padding-top: 16rem;
     padding-bottom: 16rem;
@@ -3093,6 +3101,7 @@ input::-moz-focus-inner {
   color: rgba(0, 0, 0, 0.7);
 }
 
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * testimonials
@@ -3151,6 +3160,19 @@ input::-moz-focus-inner {
   }
 
 }
+
+/* responsive projects */
+
+/* @media screen and (max-width:786px) {
+  div.card {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+  }
+
+} */
 
 @media screen and (max-width:900px) {
   .testimonials p {

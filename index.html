@@ -21,8 +21,21 @@
 </head>
 
 <style>
+    @media screen and (max-width:400px) {
+         .grid {
+         
+            margin-top: 3px !important;
+        }
+    }
+      
+    @media screen and (min-width:1000px) {
+        .row .ml {
+         margin-left: 200px !important;
+       }
+   }
+     
     .s-header{
-        padding: 0px 0px!important;
+        padding: 0px 0px !important;
 
     }
      div.card {
@@ -268,9 +281,7 @@
     <!-- works
     ================================================== -->
     <section id="works" class="s-works target-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-8 mx-5">
+       
                     <div class="row heading-block heading-block--center" data-aos="">
                         <div class="column large-full">
                             <h2 class="section-heading section-heading--centerbottom">Selected Works</h2>
@@ -280,10 +291,8 @@
                             </p>
                         </div>
                     </div> <!-- end heading-block -->
-                </div>
-            </div>
-        </div>
-        <div class="container">
+            
+        <!-- <div class="container"> -->
             <!--     title-->
             <div class="row title mb-5">
                 <div class="col text-center">
@@ -293,19 +302,22 @@
             </div>
             <!--      end of title-->
             <!--      button row-->
-            <div class="row">
-                <div class="col mx-1 my-2 text-center">
-                    <div class=" mb-1 button-group filter-button-group" role="group">
+            <!-- <div class="container-fluid"> -->
+            <div class="row ">
+                <div class="col-xs-2 ml  my-2 text-center">
+                    <div class=" mb-1 mx-auto button-group filter-button-group" role="group">
                         <button type="button" class="btn my-1 text-uppercase" data-filter=".app">web app</button>
                         <button type="button" class="btn my-1 text-uppercase" data-filter=".api">REST API</button>
                         <button type="button" class="btn my-1 text-uppercase" data-filter=".front-end">Front-ends</button>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
+        </div>
             <!--      images row-->
-            <div class="row grid projects">
-                <div class="col-sm-6 col-md-4 my-2 app">
-                    <div class="card" style="width: 30rem;">
+           <div class="row grid">
+            <div class="mx-3 my-2 app ">
+                
+                    <div class="card" style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-coffee-1.jpeg" alt="Card image cap">
                         </article>
@@ -317,8 +329,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 my-2 front-end">
-                    <div class="card" style="width: 30rem;">
+            
+                <div class=" mx-3 my-2 front-end">
+                    <div class="card" style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-water-1.jpeg" alt="Card image cap">
                         </article>
@@ -330,8 +343,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 my-2  rounded app">
-                    <div class="card " style="width: 30rem;">
+                <div class=" my-2 mx-3 rounded app">
+                    <div class="card " style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-coffee-2.jpeg" alt="Card image cap">
                         </article>
@@ -342,8 +355,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 my-2 front-end">
-                    <div class="card" style="width: 30rem;">
+                <div class=" my-2 mx-3 front-end">
+                    <div class="card" style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-water-2.jpeg" alt="Card image cap">
                         </article>
@@ -355,8 +368,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 my-2 api">
-                    <div class="card" style="width: 30rem;">
+                <div class=" my-2 mx-3 api">
+                    <div class="card" style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-tea-3.jpeg" alt="Card image cap">
                         </article>
@@ -368,8 +381,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 my-2 front-end">
-                    <div class="card" style="width: 30rem;">
+                <div class=" my-2 mx-3 front-end">
+                    <div class="card" style="width: 27rem;">
                         <article class="img-container">
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-water-3.jpeg" alt="Card image cap">
                         </article>
@@ -381,6 +394,7 @@
                         </div>
                     </div>
                 </div>
+            </div> 
     </section> <!-- end s-work -->
     <!-- footer
     ================================================== -->
@@ -397,14 +411,13 @@
     </footer>
     <!-- Java Script
     ================================================== -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script> -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <!-- <script src="js/plugins.js"></script> -->
     <script src="js/main.js"></script>
 </body>
