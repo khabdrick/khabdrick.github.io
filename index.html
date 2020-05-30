@@ -54,7 +54,8 @@
     
 </style>
 
-<body id="top">
+<body id="top" class="all">
+    <section>
     <div id="preloader">
         <div id="loader"></div>
     </div>
@@ -249,7 +250,7 @@
                             <div class="item-service__content">
                                 <h4 class="item-title">Hosting</h4>
                                 <p>
-                                    <strong> Technologies:</strong> Heroku, AWS s6 <br>
+                                    <strong> Technologies:</strong> Heroku, AWS S3 <br>
                                     I use both technologies to host sites to the cloud.  
                                 </p>
                             </div>
@@ -319,10 +320,11 @@
                 
                     <div class="card" style="width: 27rem;">
                         <article class="img-container">
-                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-coffee-1.jpeg" alt="Card image cap">
+                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/Webp.net-resizeimage1.png" alt="Card image cap">
                         </article>
                         <div class="card-body">
-                            <p class="card-text">A mini social media site built with Django. </p>
+                            
+                            <p class="card-text">A mini social media site built with Django. low budget Reddit </p>
                             <br>
                             <a class="mx-3" href="gistmedia.herokuapp.com">live</a>
                             <a class="mx-3" href="">Source Code</a>
@@ -346,7 +348,7 @@
                 <div class=" my-2 mx-3 rounded app">
                     <div class="card " style="width: 27rem;">
                         <article class="img-container">
-                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-coffee-2.jpeg" alt="Card image cap">
+                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/Webp.net-resizeimage.png" alt="Card image cap">
                         </article>
                         <div class="card-body">
                             <p class="card-text">This is a fully functional ecommerce site built with Django and jQuery. </p>
@@ -355,16 +357,16 @@
                         </div>
                     </div>
                 </div>
-                <div class=" my-2 mx-3 front-end">
+                <div class=" my-2 mx-3 app">
                     <div class="card" style="width: 27rem;">
                         <article class="img-container">
-                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-water-2.jpeg" alt="Card image cap">
+                            <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/Webp.net-resizeimage2.png" alt="Card image cap">
                         </article>
                         <div class="card-body">
-                            <p class="card-text">no Project yet. </p>
+                            <p class="card-text">blog site</p>
                             <br><br>
-                            <a class="mx-3" href="">live</a>
-                            <a class="mx-3" href="">Source Code</a>
+                            <a class="mx-3" href="https://mhd-blog.herokuapp.com/">live</a>
+                            <a class="mx-3" href="https://github.com/khabdrick/mhd-blog">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -387,10 +389,10 @@
                             <img class="card-img-top img-fluid rounded project-image" src="images/portfolio/projects-water-3.jpeg" alt="Card image cap">
                         </article>
                         <div class="card-body">
-                            <p class="card-text">no Project yet. </p>
+                            <p class="card-text">A restaurant site. </p>
                             <br><br>
-                            <a class="mx-3" href="">live</a>
-                            <a class="mx-3" href="">Source Code</a>
+                            <a class="mx-3" href="https://ali-restaurant.netlify.app/">live</a>
+                            <a class="mx-3" href="https://github.com/khabdrick/restaurant-site">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -409,9 +411,19 @@
             </div>
         </div>
     </footer>
+</section>
     <!-- Java Script
     ================================================== -->
-
+    <script>
+        document.querySelector('.all section').style.display='none';
+        document.querySelector('.all').classList.add('spinner-1');
+        setTimeout(()=>{
+          document.querySelector('.all').classList.remove('spinner-1');
+          document.querySelector('.all section ').style.display='block';
+    
+        },2000);
+    </script>
+      
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
